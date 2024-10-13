@@ -38,6 +38,30 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+.programming-bro img {
+  height: auto;
+  animation: bounce 2s infinite;
+  margin-right: 40px;
+}
+
+@keyframes bounce {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(50px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+/* Hide the image on screens less than 600px wide */
+@media (max-width: 600px) {
+  .programming-bro img {
+    display: none;
+  }
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -401,6 +425,15 @@ section {
 
 .section-title p {
   margin-bottom: 0;
+}
+
+.section-desc {
+  padding: 20px;
+}
+
+.section-desc p {
+  text-align: justify;
+  margin-bottom: 20px;
 }
 
 /*--------------------------------------------------------------
