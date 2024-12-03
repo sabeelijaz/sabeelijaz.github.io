@@ -1202,6 +1202,7 @@ section {
   color: #fff;
   transition: 0.4s;
   border-radius: 50px;
+  margin-bottom: 5px;
 }
 
 .btn-custom img {
