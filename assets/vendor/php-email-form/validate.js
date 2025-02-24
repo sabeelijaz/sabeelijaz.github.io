@@ -13,24 +13,32 @@
       event.preventDefault();
 
       let thisForm = this;
-
-      let action = thisForm.getAttribute('action');
       
       thisForm.querySelector('.loading').classList.add('d-block');
       thisForm.querySelector('.error-message').classList.remove('d-block');
       thisForm.querySelector('.sent-message').classList.remove('d-block');
 
-      let formData = new FormData( thisForm );
-      email_form_submit(thisForm, action, formData);   
+
+      email_form_submit(thisForm);   
          
     });
   });
 
-  function email_form_submit(thisForm, action, formData) {
-    thisForm.submit();
-    thisForm.querySelector('.loading').classList.remove('d-block');
-    thisForm.querySelector('.sent-message').classList.add('d-block');
-    thisForm.reset();
+  function email_form_submit(thisForm) {
+    if (thisForm) {
+      var mailData = new FormData(thisForm);
+      var mailUri = "mailto:sabeelijaz07@gmail.com" + 
+      `?subject=${mailData.get('subject')}` +
+      `&email=${mailData.get('email')}` +
+      `&body=${mailData.get('body')}`;
+      
+      thisForm.querySelector('.loading').classList.remove('d-block');
+      thisForm.querySelector('.sent-message').classList.add('d-block');
+      thisForm.reset();
+  
+      location.href = mailUri;
+    }
+    
   }
 
   function displayError(thisForm, error) {
