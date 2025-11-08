@@ -1285,7 +1285,7 @@ nav {
 }
 
 .stat-number {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 900;
     background: linear-gradient(135deg, var(--primary-cyan), var(--primary-purple));
     -webkit-background-clip: text;
