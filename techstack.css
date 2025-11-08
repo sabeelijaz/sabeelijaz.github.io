@@ -1,0 +1,63 @@
+:root {
+    --primary-grey: #e5e7eb;
+    --primary-orange: #f97316;
+    --primary-purple: #7c3aed;
+    --secondary-amber: #fbbf24;
+    --dark-bg: #1a0b2e;
+    --darker-bg: #0f051a;
+    --card-bg: rgba(229, 231, 235, 0.03);
+    --border-color: rgba(229, 231, 235, 0.2);
+    --text-primary: #ffffff;
+    --text-secondary: #a1a1aa;
+    --primary-cyan: #00ffff;
+    --primary-pink: #ff00ff;
+}
+
+.tech-category {
+    margin-bottom: 40px;
+}
+
+.tech-category h2 {
+    color: var(--text-primary);
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.tech-item {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 20px 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    backdrop-filter: blur(10px);
+    clip-path: polygon(20px 0%, 100% 0%, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0% 100%, 0% 20px);
+}
+
+.tech-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.tech-item i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.tech-item span {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.tech-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
