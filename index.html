@@ -2,6 +2,17 @@
 <html lang="en">
 
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KCNGW7S5');</script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sabeel Ijaz - Full-Stack Software Engineer</title>
@@ -44,6 +55,11 @@
 </head>
 
 <body id="top">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KCNGW7S5" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+     
     <!-- Enhanced Background Elements -->
     <div class="cyber-bg">
         <div class="cyber-gradient"></div>
@@ -68,637 +84,690 @@
 
     <div class="main-content">
 
-    <!-- Navigation -->
-    <nav>
-        <div class="nav-container">
-            <a href="#top" class="logo">Sabeel Ijaz</a>
-            <ul class="nav-links">
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#tech-stack">Tech Stack</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="nav-bottom">
+        <!-- Navigation -->
+        <nav>
+            <div class="nav-container">
+                <a href="#top" class="logo">Sabeel Ijaz</a>
+                <ul class="nav-links">
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#tech-stack">Tech Stack</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-bottom">
+                    <a href="https://github.com/sabeelijaz" target="_blank" class="cyber-button">Access GitHub</a>
+                </div>
+                <button class="mobile-menu-button" id="mobileMenuBtn">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-header">
+                <a href="#top" class="mobile-menu-logo">Sabeel Ijaz</a>
+                <button class="mobile-menu-close" id="mobileMenuClose">✕</button>
+            </div>
+            <div class="mobile-menu-cta">
                 <a href="https://github.com/sabeelijaz" target="_blank" class="cyber-button">Access GitHub</a>
             </div>
-            <button class="mobile-menu-button" id="mobileMenuBtn">
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </button>
+            <nav class="mobile-menu-nav">
+                <ul>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#tech-stack">Tech Stack</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </nav>
 
-    <!-- Mobile Menu -->
-    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
-    <div class="mobile-menu" id="mobileMenu">
-        <div class="mobile-menu-header">
-            <a href="#top" class="mobile-menu-logo">Sabeel Ijaz</a>
-            <button class="mobile-menu-close" id="mobileMenuClose">✕</button>
-        </div>
-        <div class="mobile-menu-cta">
-            <a href="https://github.com/sabeelijaz" target="_blank" class="cyber-button">Access GitHub</a>
-        </div>
-        <nav class="mobile-menu-nav">
-            <ul>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#tech-stack">Tech Stack</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-container">
-            <h1 class="hero-title">
-                <span class="hero-nexus">Full-Stack</span><span class="hero-flow">Developer</span>
-            </h1>
-            <p class="hero-subtitle">Experienced software developer with 7+ years in building scalable web and SaaS
-                applications using Java, Node.js, Angular, React, and AWS. Skilled in designing robust APIs, intuitive
-                UIs, and efficient database architectures. Focused on clean, maintainable code and mentoring teams to
-                deliver high-quality, impactful solutions.</p>
-            <div class="hero-buttons">
-                <a href="#contact" class="btn-primary">Service Request</a>
-                <a href="https://www.linkedin.com/in/sabeel-ijaz/" target="_blank" class="btn-secondary">View LinkedIn
-                    Profile</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="stats fade-up" id="stats">
-        <div class="stats-container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <span class="stat-number">7+</span>
-                    <span class="stat-label">Years of Experience</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">15+</span>
-                    <span class="stat-label">Projects Delivered</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">2000+</span>
-                    <span class="stat-label">GitHub Commits</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">20+</span>
-                    <span class="stat-label">Technologies Used</span>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-container">
+                <h1 class="hero-title">
+                    <span class="hero-nexus">Full-Stack</span><span class="hero-flow">Developer</span>
+                </h1>
+                <p class="hero-subtitle">Experienced software developer with 7+ years in building scalable web and SaaS
+                    applications using Java, Node.js, Angular, React, and AWS. Skilled in designing robust APIs,
+                    intuitive
+                    UIs, and efficient database architectures. Focused on clean, maintainable code and mentoring teams
+                    to
+                    deliver high-quality, impactful solutions.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn-primary">Service Request</a>
+                    <a href="https://www.linkedin.com/in/sabeel-ijaz/" target="_blank" class="btn-secondary">View
+                        LinkedIn
+                        Profile</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Experience Section -->
-    <section class="features fade-up" id="experience">
-        <div class="features-container">
-            <div class="section-header">
-                <h2 class="section-title">Experience</h2>
-                <p class="section-subtitle">From backend architecture to full-stack development. Delivering efficient,
-                    maintainable, and secure systems.
-                </p>
+        <!-- Stats Section -->
+        <section class="stats fade-up" id="stats">
+            <div class="stats-container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">7+</span>
+                        <span class="stat-label">Years of Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Projects Delivered</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">2000+</span>
+                        <span class="stat-label">GitHub Commits</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">20+</span>
+                        <span class="stat-label">Technologies Used</span>
+                    </div>
+                </div>
             </div>
-            <div class="timeline">
-                <!-- First -->
-                <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
-                    <div class="timeline__event__icon ">
-                        <!-- <i class="lni-sport"></i>-->
-                        <a href="">
-                            <img src="logos/elixir.svg" alt="" class="company-logo">
-                        </a>
-                    </div>
-                    <div class="timeline__event__date">
-                        06/2022<br />-<br />Present
-                    </div>
-                    <div class="timeline__event__content ">
-                        <div class="timeline__event__title">
-                            Senior Software Engineer: Elixir Technologies
-                        </div>
-                        <div class="timeline__event__description">
-                            <ul>
-                                <li>Resolved critical bugs and addressed runtime issues in collaboration with customers
-                                    during various support sessions.</li>
-                                <li>Developed comprehensive end-to-end use cases leveraging Java (Spring Boot) to
-                                    deliver robust solutions.</li>
-                                <li>Assisted cross-functional teams in resolving technical challenges, fostering a
-                                    collaborative problem-solving environment.</li>
-                                <li>Managed and maintained pre-developed backend services to ensure their efficiency and
-                                    reliability.</li>
-                                <li>Wrote and automated unit, integration, and end-to-end tests to ensure code quality
-                                    and stability.</li>
-                                <li>Applied Test-Driven Development (TDD) and automated testing practices to deliver
-                                    reliable and maintainable code.</li>
-                                <li>Collaborated closely with product managers and QA engineers to ensure the timely
-                                    delivery of high-quality software.</li>
-                                <li>Provided technical support to product users, maintaining clear and effective
-                                    communication to address their needs.</li>
-                                <li>Utilized Git for version control to track and manage code changes efficiently.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- Second -->
-                <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
-                    <div class="timeline__event__icon">
-                        <!-- <i class="lni-sport"></i>-->
-                        <a href="">
-                            <img src="logos/bkk.svg" alt="" class="company-logo">
-                        </a>
-                    </div>
-                    <div class="timeline__event__date">
-                        07/2020<br />-<br />06/2022
-                    </div>
-                    <div class="timeline__event__content">
-                        <div class="timeline__event__title">
-                            Senior Software Engineer: Bakhabar Kissan
-                        </div>
-                        <div class="timeline__event__description">
-                            <ul>
-                                <li>Developed advisory and weather modules using Node.js to provide critical
-                                    agricultural information, with outputs utilized by IVR and OBD systems.</li>
-                                <li>Designed and implemented secure RESTful APIs and a scalable database schema for the
-                                    "Bakhabar Kissan" app, serving diverse platforms like mobile apps and web portals.
-                                </li>
-                                <li>Conducted spatial data analysis on farmers' farms to support data-driven
-                                    decision-making.</li>
-                                <li>Utilized RabbitMQ and BullQ to create data synchronization queues across company
-                                    data centers.</li>
-                                <li>Delivered training and procedural support to interns, fostering skill development
-                                    and professional growth.</li>
-                                <li>Automated media file synchronization across servers using rsync, ensuring
-                                    operational efficiency.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!--third-->
+        </section>
 
-                <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
-                    <div class="timeline__event__icon">
-                        <!-- <i class="lni-sport"></i>-->
-                        <a href="">
-                            <img src="logos/ezdealz.png" alt="" class="company-logo">
-                        </a>
-                    </div>
-                    <div class="timeline__event__date">
-                        01/2020<br />-<br />06/2020
-                    </div>
-                    <div class="timeline__event__content">
-                        <div class="timeline__event__title">
-                            Full-Stack Developer: EzDealz Private Limited
-                        </div>
-                        <div class="timeline__event__description">
-                            <ul>
-                                <li>
-                                    <strong>Project Overview:</strong> Delivered a short-term project named EzDealz, a
-                                    unique mobile gaming application. This app offers users the chance to win instant
-                                    prizes, cash, and discounted deals from their favorite brands through daily and
-                                    weekly fun questions, numeric code guesses, and riddles.
-                                </li>
-                                <li>
-                                    <strong>Key Achievements:</strong>
-                                    <ul>
-                                        <li>Developed robust and secure RESTful APIs consumed by both the mobile app and
-                                            web portal.</li>
-                                        <li>Implemented MQTT to sync data in real-time between different apps, ensuring
-                                            seamless user experience.</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!--forth-->
-
-                <div class="timeline__event animated fadeInUp timeline__event--type1">
-                    <div class="timeline__event__icon">
-                        <!-- <i class="lni-sport"></i>-->
-                        <a href="">
-                            <img src="logos/jld.png" alt="" class="company-logo">
-                        </a>
-                    </div>
-                    <div class="timeline__event__date">
-                        12/2018<br />-<br />12/2019
-                    </div>
-                    <div class="timeline__event__content">
-                        <div class="timeline__event__title">
-                            Mean Stack Developer: JLD International IT Solutions LLC
-                        </div>
-                        <div class="timeline__event__description">
-                            <ul>
-                                <li>Developed backend services for crypto projects like Coin-Hunter and Coupon Talk
-                                    Talk, enabling multi-cryptocurrency configuration (ETH, LTC, BTC) and setting up
-                                    daemons.</li>
-                                <li>Designed a normalized database schema and an Angular-based dashboard for monitoring
-                                    and updating app settings.</li>
-                                <li>Contributed to DevOps tasks, including application deployment and domain mapping on
-                                    AWS Cloud, ensuring scalability and reliability.</li>
-                                <li>Gained expertise in blockchain technology, cryptocurrency development, and
-                                    compliance with international regulatory environments.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
-                    <div class="timeline__event__icon ">
-                        <!-- <i class="lni-sport"></i>-->
-                        <a href="">
-                            <img src="logos/RS.png" alt="" class="company-logo">
-                        </a>
-                    </div>
-                    <div class="timeline__event__date">
-                        01/2018<br />-<br />12/2018
-                    </div>
-                    <div class="timeline__event__content ">
-                        <div class="timeline__event__title">
-                            Mean Stack Developer: Reactive Space
-                        </div>
-                        <div class="timeline__event__description">
-                            <ul>
-                                <li>Contributed to the ABBC Multicoin Wallet, enabling users to configure multiple
-                                    cryptocurrencies like ETH, LTC, and BTC.</li>
-                                <li>Developed complete backend services in Node.js, deployed daemons for all supported
-                                    coins, and utilized Firebase for data storage and functions.</li>
-                                <li>Deployed applications on AWS ECS Cluster, ensuring scalability and reliability.</li>
-                                <li>Gained practical experience in cryptocurrency development and blockchain
-                                    technologies, enhancing technical expertise.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
-                    <div class="timeline__event__icon">
-                        <!-- <i class="lni-sport"></i>-->
-                        <a href="">
-                            <img src="logos/KT.png" alt="" class="company-logo">
-                        </a>
-                    </div>
-                    <div class="timeline__event__date">
-                        10/2017<br />-<br />01/2018
-                    </div>
-                    <div class="timeline__event__content">
-                        <div class="timeline__event__title">
-                            Web Developer: Khas Tech
-                        </div>
-                        <div class="timeline__event__description">
-                            <ul>
-                                <li>Contributed to the development of the Iqra City learning platform, similar to Udemy,
-                                    during an internship.</li>
-                                <li>Built the web application using the Laravel framework, gaining hands-on experience
-                                    with emerging technologies.</li>
-                                <li>Acquired practical skills and foundational knowledge that shaped professional growth
-                                    and prepared for future roles.</li>
-                                <li>Collaborated with team members to implement features and debug issues, enhancing
-                                    teamwork and problem-solving abilities.</li>
-                                <li>Documented development processes and learned best practices in web application
-                                    design and deployment.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-    <section class="features fade-up" id="projects">
-        <div class="features-container">
-            <div class="section-header">
-                <h2 class="section-title-project">Projects</h2>
-                <p class="section-subtitle">Turning concepts into functional, user-driven solutions. Designed, built,
-                    and optimized for real-world impact.</p>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card-project">
-                    <div class="feature-icon-project">
-                        <img src="projects/ccm.png" alt="">
-                    </div>
-                    <h3>Customer Communications Management (CCM) System</h3>
-                    <p>Customer Communication Management (CCM) System by Elixir Technologies is an enterprise-grade
-                        platform designed to streamline and automate customer communications across multiple channels.
-                        It enables organizations to create, personalize, and deliver documents such as bills,
-                        statements, and notifications efficiently. The system ensures compliance, scalability, and
-                        seamless integration with existing workflows to enhance customer engagement and operational
-                        productivity.</p>
-                </div>
-
-                <div class="feature-card-project">
-                    <div class="feature-icon-project">
-                        <img src="projects/bkk-app.png" alt="">
-                    </div>
-                    <h3>Bakhabar Kissan - Advisory System</h3>
-                    <p>The Bakhabar Kissan Advisory System provides personalized, crop-specific recommendations to
-                        farmers based on real-time data and expert analysis. It guides users through every stage of
-                        cultivation — from sowing to harvest — with tips on irrigation, fertilization, and pest control.
-                        By combining local insights with digital intelligence, it helps farmers improve productivity and
-                        sustainability.</p>
-                </div>
-
-                <div class="feature-card-project">
-                    <div class="feature-icon-project">
-                        <img src="projects/bkk-social.png" alt="">
-                    </div>
-                    <h3>Bakhabar Kissan - Social Platform</h3>
-                    <p>Bakhabar Kissan is a comprehensive social and advisory mobile platform designed for farmers,
-                        providing real-time weather updates, crop management tips, market rates, and expert guidance.
-                        The app empowers farmers to make informed decisions, connect with agricultural experts, and
-                        access personalized information — bridging the gap between technology and modern farming in
-                        Pakistan.</p>
-                </div>
-
-                <div class="feature-card-project">
-                    <div class="feature-icon-project">
-                        <img src="projects/bkk-weather.png" alt="">
-                    </div>
-                    <h3>Bakhabar Kissan - Weather Module</h3>
-                    <p>The Bakhabar Kissan Weather Module delivers accurate, location-based weather forecasts tailored
-                        for farmers. It provides real-time updates on temperature, rainfall, humidity, and wind
-                        conditions, helping users plan agricultural activities effectively. Integrated with the main
-                        Bakhabar Kissan app, it ensures farmers receive timely advisories and alerts to protect crops
-                        and optimize yield.</p>
-                </div>
-
-                <div class="feature-card-project">
-                    <div class="feature-icon-project">
-                        <img src="projects/ezdealz.png" alt="">
-                    </div>
-                    <h3>EzDeals App</h3>
-                    <p>EzDealz is a unique mobile gaming and discount platform where users win instant prizes, cash, and
-                        brand deals by solving riddles, answering quizzes, and guessing codes. The app also featured a
-                        live TV game-show integration, allowing players to participate in EzJeet (Easy Win) directly
-                        from their smartphones — marking it as one of Pakistan’s first indigenous gaming innovations.
+        <!-- Experience Section -->
+        <section class="features fade-up" id="experience">
+            <div class="features-container">
+                <div class="section-header">
+                    <h2 class="section-title">Experience</h2>
+                    <p class="section-subtitle">From backend architecture to full-stack development. Delivering
+                        efficient,
+                        maintainable, and secure systems.
                     </p>
                 </div>
-
-                <div class="feature-card-project">
-                    <div class="feature-icon-project">
-                        <img src="projects/coinhunter.png" alt="">
+                <div class="timeline">
+                    <!-- First -->
+                    <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
+                        <div class="timeline__event__icon ">
+                            <!-- <i class="lni-sport"></i>-->
+                            <a href="">
+                                <img src="logos/elixir.svg" alt="" class="company-logo">
+                            </a>
+                        </div>
+                        <div class="timeline__event__date">
+                            06/2022<br />-<br />Present
+                        </div>
+                        <div class="timeline__event__content ">
+                            <div class="timeline__event__title">
+                                Senior Software Engineer: Elixir Technologies
+                            </div>
+                            <div class="timeline__event__description">
+                                <ul>
+                                    <li>Resolved critical bugs and addressed runtime issues in collaboration with
+                                        customers
+                                        during various support sessions.</li>
+                                    <li>Developed comprehensive end-to-end use cases leveraging Java (Spring Boot) to
+                                        deliver robust solutions.</li>
+                                    <li>Assisted cross-functional teams in resolving technical challenges, fostering a
+                                        collaborative problem-solving environment.</li>
+                                    <li>Managed and maintained pre-developed backend services to ensure their efficiency
+                                        and
+                                        reliability.</li>
+                                    <li>Wrote and automated unit, integration, and end-to-end tests to ensure code
+                                        quality
+                                        and stability.</li>
+                                    <li>Applied Test-Driven Development (TDD) and automated testing practices to deliver
+                                        reliable and maintainable code.</li>
+                                    <li>Collaborated closely with product managers and QA engineers to ensure the timely
+                                        delivery of high-quality software.</li>
+                                    <li>Provided technical support to product users, maintaining clear and effective
+                                        communication to address their needs.</li>
+                                    <li>Utilized Git for version control to track and manage code changes efficiently.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <h3>Coin Hunter</h3>
-                    <p>CoinHunter is an augmented-reality mobile platform where users explore their real-world
-                        surroundings via camera view to find, collect and trade cryptocurrency “coins.” With
-                        location-based AR interactions, the app turns crypto-earning into a game-like adventure and
-                        connects players to a wallet and social features for sharing and trading digital assets.</p>
+                    <!-- Second -->
+                    <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
+                        <div class="timeline__event__icon">
+                            <!-- <i class="lni-sport"></i>-->
+                            <a href="">
+                                <img src="logos/bkk.svg" alt="" class="company-logo">
+                            </a>
+                        </div>
+                        <div class="timeline__event__date">
+                            07/2020<br />-<br />06/2022
+                        </div>
+                        <div class="timeline__event__content">
+                            <div class="timeline__event__title">
+                                Senior Software Engineer: Bakhabar Kissan
+                            </div>
+                            <div class="timeline__event__description">
+                                <ul>
+                                    <li>Developed advisory and weather modules using Node.js to provide critical
+                                        agricultural information, with outputs utilized by IVR and OBD systems.</li>
+                                    <li>Designed and implemented secure RESTful APIs and a scalable database schema for
+                                        the
+                                        "Bakhabar Kissan" app, serving diverse platforms like mobile apps and web
+                                        portals.
+                                    </li>
+                                    <li>Conducted spatial data analysis on farmers' farms to support data-driven
+                                        decision-making.</li>
+                                    <li>Utilized RabbitMQ and BullQ to create data synchronization queues across company
+                                        data centers.</li>
+                                    <li>Delivered training and procedural support to interns, fostering skill
+                                        development
+                                        and professional growth.</li>
+                                    <li>Automated media file synchronization across servers using rsync, ensuring
+                                        operational efficiency.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--third-->
+
+                    <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
+                        <div class="timeline__event__icon">
+                            <!-- <i class="lni-sport"></i>-->
+                            <a href="">
+                                <img src="logos/ezdealz.png" alt="" class="company-logo">
+                            </a>
+                        </div>
+                        <div class="timeline__event__date">
+                            01/2020<br />-<br />06/2020
+                        </div>
+                        <div class="timeline__event__content">
+                            <div class="timeline__event__title">
+                                Full-Stack Developer: EzDealz Private Limited
+                            </div>
+                            <div class="timeline__event__description">
+                                <ul>
+                                    <li>
+                                        <strong>Project Overview:</strong> Delivered a short-term project named EzDealz,
+                                        a
+                                        unique mobile gaming application. This app offers users the chance to win
+                                        instant
+                                        prizes, cash, and discounted deals from their favorite brands through daily and
+                                        weekly fun questions, numeric code guesses, and riddles.
+                                    </li>
+                                    <li>
+                                        <strong>Key Achievements:</strong>
+                                        <ul>
+                                            <li>Developed robust and secure RESTful APIs consumed by both the mobile app
+                                                and
+                                                web portal.</li>
+                                            <li>Implemented MQTT to sync data in real-time between different apps,
+                                                ensuring
+                                                seamless user experience.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!--forth-->
+
+                    <div class="timeline__event animated fadeInUp timeline__event--type1">
+                        <div class="timeline__event__icon">
+                            <!-- <i class="lni-sport"></i>-->
+                            <a href="">
+                                <img src="logos/jld.png" alt="" class="company-logo">
+                            </a>
+                        </div>
+                        <div class="timeline__event__date">
+                            12/2018<br />-<br />12/2019
+                        </div>
+                        <div class="timeline__event__content">
+                            <div class="timeline__event__title">
+                                Mean Stack Developer: JLD International IT Solutions LLC
+                            </div>
+                            <div class="timeline__event__description">
+                                <ul>
+                                    <li>Developed backend services for crypto projects like Coin-Hunter and Coupon Talk
+                                        Talk, enabling multi-cryptocurrency configuration (ETH, LTC, BTC) and setting up
+                                        daemons.</li>
+                                    <li>Designed a normalized database schema and an Angular-based dashboard for
+                                        monitoring
+                                        and updating app settings.</li>
+                                    <li>Contributed to DevOps tasks, including application deployment and domain mapping
+                                        on
+                                        AWS Cloud, ensuring scalability and reliability.</li>
+                                    <li>Gained expertise in blockchain technology, cryptocurrency development, and
+                                        compliance with international regulatory environments.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
+                        <div class="timeline__event__icon ">
+                            <!-- <i class="lni-sport"></i>-->
+                            <a href="">
+                                <img src="logos/RS.png" alt="" class="company-logo">
+                            </a>
+                        </div>
+                        <div class="timeline__event__date">
+                            01/2018<br />-<br />12/2018
+                        </div>
+                        <div class="timeline__event__content ">
+                            <div class="timeline__event__title">
+                                Mean Stack Developer: Reactive Space
+                            </div>
+                            <div class="timeline__event__description">
+                                <ul>
+                                    <li>Contributed to the ABBC Multicoin Wallet, enabling users to configure multiple
+                                        cryptocurrencies like ETH, LTC, and BTC.</li>
+                                    <li>Developed complete backend services in Node.js, deployed daemons for all
+                                        supported
+                                        coins, and utilized Firebase for data storage and functions.</li>
+                                    <li>Deployed applications on AWS ECS Cluster, ensuring scalability and reliability.
+                                    </li>
+                                    <li>Gained practical experience in cryptocurrency development and blockchain
+                                        technologies, enhancing technical expertise.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
+                        <div class="timeline__event__icon">
+                            <!-- <i class="lni-sport"></i>-->
+                            <a href="">
+                                <img src="logos/KT.png" alt="" class="company-logo">
+                            </a>
+                        </div>
+                        <div class="timeline__event__date">
+                            10/2017<br />-<br />01/2018
+                        </div>
+                        <div class="timeline__event__content">
+                            <div class="timeline__event__title">
+                                Web Developer: Khas Tech
+                            </div>
+                            <div class="timeline__event__description">
+                                <ul>
+                                    <li>Contributed to the development of the Iqra City learning platform, similar to
+                                        Udemy,
+                                        during an internship.</li>
+                                    <li>Built the web application using the Laravel framework, gaining hands-on
+                                        experience
+                                        with emerging technologies.</li>
+                                    <li>Acquired practical skills and foundational knowledge that shaped professional
+                                        growth
+                                        and prepared for future roles.</li>
+                                    <li>Collaborated with team members to implement features and debug issues, enhancing
+                                        teamwork and problem-solving abilities.</li>
+                                    <li>Documented development processes and learned best practices in web application
+                                        design and deployment.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="feature-card-project">
-                    <div class="feature-icon-project">
-                        <img src="projects/coupontalktalk.png" alt="">
-                    </div>
-                    <h3>Coupon Talk Talk</h3>
-                    <p>Coupon Talk Talk is an augmented reality–based platform designed to create engaging,
-                        revenue-generating experiences for businesses and users alike. It allows users to explore
-                        interactive AR content through their smartphone cameras — blending real-world views with digital
-                        deals, guides, and training materials. Built to client specifications, it helps brands enhance
-                        engagement, accessibility, and productivity through immersive technology.</p>
-                </div>
+            </div>
+        </section>
 
-                <div class="feature-card-project">
-                    <div class="feature-icon-project">
-                        <img src="projects/abbc-wallet.png" alt="">
+        <section class="features fade-up" id="projects">
+            <div class="features-container">
+                <div class="section-header">
+                    <h2 class="section-title-project">Projects</h2>
+                    <p class="section-subtitle">Turning concepts into functional, user-driven solutions. Designed,
+                        built,
+                        and optimized for real-world impact.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card-project">
+                        <div class="feature-icon-project">
+                            <img src="projects/ccm.png" alt="">
+                        </div>
+                        <h3>Customer Communications Management (CCM) System</h3>
+                        <p>Customer Communication Management (CCM) System by Elixir Technologies is an enterprise-grade
+                            platform designed to streamline and automate customer communications across multiple
+                            channels.
+                            It enables organizations to create, personalize, and deliver documents such as bills,
+                            statements, and notifications efficiently. The system ensures compliance, scalability, and
+                            seamless integration with existing workflows to enhance customer engagement and operational
+                            productivity.</p>
                     </div>
-                    <h3>ABBC Multicoin Wallet</h3>
-                    <p>ABBC Multicoin Wallet is a secure and user-friendly digital wallet that supports multiple
-                        cryptocurrencies, enabling seamless transactions and asset management in one place. It ensures
-                        high-end encryption, fast transfers, and easy portfolio tracking. Designed for both beginners
-                        and experienced traders, it provides a reliable platform for storing, sending, and receiving
-                        digital assets with confidence.</p>
+
+                    <div class="feature-card-project">
+                        <div class="feature-icon-project">
+                            <img src="projects/bkk-app.png" alt="">
+                        </div>
+                        <h3>Bakhabar Kissan - Advisory System</h3>
+                        <p>The Bakhabar Kissan Advisory System provides personalized, crop-specific recommendations to
+                            farmers based on real-time data and expert analysis. It guides users through every stage of
+                            cultivation — from sowing to harvest — with tips on irrigation, fertilization, and pest
+                            control.
+                            By combining local insights with digital intelligence, it helps farmers improve productivity
+                            and
+                            sustainability.</p>
+                    </div>
+
+                    <div class="feature-card-project">
+                        <div class="feature-icon-project">
+                            <img src="projects/bkk-social.png" alt="">
+                        </div>
+                        <h3>Bakhabar Kissan - Social Platform</h3>
+                        <p>Bakhabar Kissan is a comprehensive social and advisory mobile platform designed for farmers,
+                            providing real-time weather updates, crop management tips, market rates, and expert
+                            guidance.
+                            The app empowers farmers to make informed decisions, connect with agricultural experts, and
+                            access personalized information — bridging the gap between technology and modern farming in
+                            Pakistan.</p>
+                    </div>
+
+                    <div class="feature-card-project">
+                        <div class="feature-icon-project">
+                            <img src="projects/bkk-weather.png" alt="">
+                        </div>
+                        <h3>Bakhabar Kissan - Weather Module</h3>
+                        <p>The Bakhabar Kissan Weather Module delivers accurate, location-based weather forecasts
+                            tailored
+                            for farmers. It provides real-time updates on temperature, rainfall, humidity, and wind
+                            conditions, helping users plan agricultural activities effectively. Integrated with the main
+                            Bakhabar Kissan app, it ensures farmers receive timely advisories and alerts to protect
+                            crops
+                            and optimize yield.</p>
+                    </div>
+
+                    <div class="feature-card-project">
+                        <div class="feature-icon-project">
+                            <img src="projects/ezdealz.png" alt="">
+                        </div>
+                        <h3>EzDeals App</h3>
+                        <p>EzDealz is a unique mobile gaming and discount platform where users win instant prizes, cash,
+                            and
+                            brand deals by solving riddles, answering quizzes, and guessing codes. The app also featured
+                            a
+                            live TV game-show integration, allowing players to participate in EzJeet (Easy Win) directly
+                            from their smartphones — marking it as one of Pakistan’s first indigenous gaming
+                            innovations.
+                        </p>
+                    </div>
+
+                    <div class="feature-card-project">
+                        <div class="feature-icon-project">
+                            <img src="projects/coinhunter.png" alt="">
+                        </div>
+                        <h3>Coin Hunter</h3>
+                        <p>CoinHunter is an augmented-reality mobile platform where users explore their real-world
+                            surroundings via camera view to find, collect and trade cryptocurrency “coins.” With
+                            location-based AR interactions, the app turns crypto-earning into a game-like adventure and
+                            connects players to a wallet and social features for sharing and trading digital assets.</p>
+                    </div>
+
+                    <div class="feature-card-project">
+                        <div class="feature-icon-project">
+                            <img src="projects/coupontalktalk.png" alt="">
+                        </div>
+                        <h3>Coupon Talk Talk</h3>
+                        <p>Coupon Talk Talk is an augmented reality–based platform designed to create engaging,
+                            revenue-generating experiences for businesses and users alike. It allows users to explore
+                            interactive AR content through their smartphone cameras — blending real-world views with
+                            digital
+                            deals, guides, and training materials. Built to client specifications, it helps brands
+                            enhance
+                            engagement, accessibility, and productivity through immersive technology.</p>
+                    </div>
+
+                    <div class="feature-card-project">
+                        <div class="feature-icon-project">
+                            <img src="projects/abbc-wallet.png" alt="">
+                        </div>
+                        <h3>ABBC Multicoin Wallet</h3>
+                        <p>ABBC Multicoin Wallet is a secure and user-friendly digital wallet that supports multiple
+                            cryptocurrencies, enabling seamless transactions and asset management in one place. It
+                            ensures
+                            high-end encryption, fast transfers, and easy portfolio tracking. Designed for both
+                            beginners
+                            and experienced traders, it provides a reliable platform for storing, sending, and receiving
+                            digital assets with confidence.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Tech Stack -->
-    <section class="features fade-up" id="tech-stack">
-        <div class="features-container">
-            <div class="section-header">
-                <h2 class="section-title">The Technologies Behind Solutions</h2>
-                <p class="section-subtitle">Delivering reliable and scalable software through a carefully selected set
-                    of modern technologies.</p>
-            </div>
-
-            <!-- Languages -->
-            <div class="tech-category">
-                <h2>Languages</h2>
-                <div class="tech-grid">
-                    <div class="tech-item"><i class="devicon-java-plain colored"></i><span>Java</span></div>
-                    <div class="tech-item"><i class="devicon-typescript-plain colored"></i><span>TypeScript</span></div>
-                    <div class="tech-item"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
-                    <div class="tech-item"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+        <!-- Tech Stack -->
+        <section class="features fade-up" id="tech-stack">
+            <div class="features-container">
+                <div class="section-header">
+                    <h2 class="section-title">The Technologies Behind Solutions</h2>
+                    <p class="section-subtitle">Delivering reliable and scalable software through a carefully selected
+                        set
+                        of modern technologies.</p>
                 </div>
-            </div>
 
-            <!-- Frameworks & Tools -->
-            <div class="tech-category">
-                <h2>Frameworks & Tools</h2>
-                <div class="tech-grid">
-                    <div class="tech-item"><i class="devicon-angular-plain colored"></i><span>Angular</span></div>
-                    <div class="tech-item"><i class="devicon-react-original colored"></i><span>React</span></div>
-                    <div class="tech-item"><i class="devicon-spring-plain colored"></i><span>Spring Boot</span></div>
-                    <div class="tech-item">
-                        <img src="logos/loopback-colored.png" alt="" class="tech-icon">
-                        <span>LoopBack</span>
-                    </div>
-                    <div class="tech-item"><i class="devicon-nestjs-plain colored"></i><span>Nest.js</span></div>
-                    <div class="tech-item"><i class="devicon-nextjs-plain colored"></i><span>Next.js</span></div>
-                    <div class="tech-item"><i class="devicon-react-original colored"></i><span>RxJS</span></div>
-                    <div class="tech-item"><i class="devicon-redux-original colored"></i><span>Redux</span></div>
-                </div>
-            </div>
-
-            <!-- Databases -->
-            <div class="tech-category">
-                <h2>Databases</h2>
-                <div class="tech-grid">
-                    <div class="tech-item"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
-                    <div class="tech-item"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
-                    <div class="tech-item"><i class="devicon-mongodb-plain colored"></i><span>MongoDB</span></div>
-                    <div class="tech-item"><i class="devicon-redis-plain colored"></i><span>Redis</span></div>
-                </div>
-            </div>
-
-            <!-- ORM -->
-            <div class="tech-category">
-                <h2>ORM</h2>
-                <div class="tech-grid">
-                    <div class="tech-item"><i class="devicon-sequelize-plain colored"></i><span>Sequelize</span></div>
-                    <div class="tech-item"><i class="devicon-hibernate-plain colored"></i><span>Hibernate</span></div>
-                    <div class="tech-item">
-                        <img src="logos/typeorm-icon-colored.png" alt="" class="tech-icon">
-                        <span>TypeORM</span>
-                    </div>
-                    <div class="tech-item"><i class="devicon-knexjs-original colored"></i><span>Knex /
-                            Objection.js</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- DevOps -->
-            <div class="tech-category">
-                <h2>DevOps</h2>
-                <div class="tech-grid">
-                    <div class="tech-item"><i class="devicon-amazonwebservices-plain colored"></i><span>AWS</span></div>
-                    <div class="tech-item"><i class="devicon-amazonwebservices-plain colored"></i><span>EC2 | S3 | MQTT
-                            | SQS</span></div>
-                    <div class="tech-item"><i class="devicon-rabbitmq-original colored"></i><span>RabbitMQ</span></div>
-                    <div class="tech-item"><i class="devicon-nodejs-plain colored"></i><span>BullQ</span></div>
-                    <div class="tech-item"><i class="devicon-git-plain colored"></i><span>Git</span></div>
-                    <div class="tech-item"><i class="devicon-jira-plain colored"></i><span>Jira</span></div>
-                </div>
-            </div>
-
-            <!-- Others -->
-            <div class="tech-category">
-                <h2>Others</h2>
-                <div class="tech-grid">
-                    <div class="tech-item"><i class="devicon-html5-plain colored"></i><span>HTML</span></div>
-                    <div class="tech-item"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
-                    <div class="tech-item"><i class="devicon-css3-plain colored"></i><span>CSS</span></div>
-                    <div class="tech-item"><i class="devicon-sass-original colored"></i><span>SASS</span></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="features fade-up" id="testimonials">
-        <div class="features-container">
-            <div class="section-header">
-                <h2 class="section-title">Testimonials</h2>
-                <p class="section-subtitle">Words from people I’ve had the pleasure to work with — their experiences
-                    tell the story best. Honest feedback that reflects my passion for quality and teamwork.</p>
-            </div>
-
-            <div class="features-grid">
-                <div class="feature-card">
-
-                    <h3>Zeeshan Sultan - Solution Architect</h3>
-                    <p>Sabeel is a very dedicated and hardworking resource. If i had one word to describe him, It would
-                        be reliable. Never afraid of going the extra mile.</p>
-                    <div class="feature-icon float-right">
-                        <a href="https://www.linkedin.com/in/zeeshi7897/" target="_blank">
-                            <img src="https://media.licdn.com/dms/image/v2/D4D03AQGnlYBWi3nZWg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1699760019164?e=1763596800&v=beta&t=2wq3VBxADnEc6wHEY0oRQwMLPw-MBd_BHn6jCAYL6wM"
-                                alt="">
-                        </a>
+                <!-- Languages -->
+                <div class="tech-category">
+                    <h2>Languages</h2>
+                    <div class="tech-grid">
+                        <div class="tech-item"><i class="devicon-java-plain colored"></i><span>Java</span></div>
+                        <div class="tech-item"><i class="devicon-typescript-plain colored"></i><span>TypeScript</span>
+                        </div>
+                        <div class="tech-item"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span>
+                        </div>
+                        <div class="tech-item"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
                     </div>
                 </div>
 
-                <div class="feature-card">
-
-                    <h3>Faheem Imtiaz - Product Designer</h3>
-                    <p>I wholeheartedly recommend Sabeel as a highly dedicated and hardworking individual. During our
-                        time together at Reactive Space, I consistently witnessed his exceptional work ethic and
-                        commitment to delivering top-notch results. He is a valuable team player who always goes above
-                        and beyond to ensure success. Any organization would benefit greatly from having Sabeel on their
-                        team.</p>
-                    <div class="feature-icon float-right">
-                        <a href="https://www.linkedin.com/in/faheemimtiaz/" target="_blank">
-                            <img src="https://media.licdn.com/dms/image/v2/C4E03AQFwlBZuiXO13g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1632298938315?e=1763596800&v=beta&t=7zZdrV_5SbNOIbX1BfqObAcw1an4l7npb_HEhZc4ML4"
-                                alt="">
-                        </a>
+                <!-- Frameworks & Tools -->
+                <div class="tech-category">
+                    <h2>Frameworks & Tools</h2>
+                    <div class="tech-grid">
+                        <div class="tech-item"><i class="devicon-angular-plain colored"></i><span>Angular</span></div>
+                        <div class="tech-item"><i class="devicon-react-original colored"></i><span>React</span></div>
+                        <div class="tech-item"><i class="devicon-spring-plain colored"></i><span>Spring Boot</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="logos/loopback-colored.png" alt="" class="tech-icon">
+                            <span>LoopBack</span>
+                        </div>
+                        <div class="tech-item"><i class="devicon-nestjs-plain colored"></i><span>Nest.js</span></div>
+                        <div class="tech-item"><i class="devicon-nextjs-plain colored"></i><span>Next.js</span></div>
+                        <div class="tech-item"><i class="devicon-react-original colored"></i><span>RxJS</span></div>
+                        <div class="tech-item"><i class="devicon-redux-original colored"></i><span>Redux</span></div>
                     </div>
                 </div>
 
-                <div class="feature-card">
-
-                    <h3>Zeeshan Ahmed - Lead IOS Developer</h3>
-                    <p>Throughout our collaboration, Sabeel consistently demonstrated a high level of technical
-                        expertise, dedication, and problem-solving abilities. His proficiency in both front-end and
-                        back-end development allowed us to seamlessly integrate complex systems and deliver a
-                        high-quality product on time. </p>
-                    <div class="feature-icon float-right">
-                        <a href="https://www.linkedin.com/in/zeeshan-ahmed-se/" target="_blank">
-                            <img src="https://media.licdn.com/dms/image/v2/D4D03AQE_9EbwVPi32g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1695582027686?e=1763596800&v=beta&t=xtkj3uFk9bkNw2Hg_OlINUZZaVhdxXS9RTTuXlkMjwc"
-                                alt="">
-                        </a>
+                <!-- Databases -->
+                <div class="tech-category">
+                    <h2>Databases</h2>
+                    <div class="tech-grid">
+                        <div class="tech-item"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+                        <div class="tech-item"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span>
+                        </div>
+                        <div class="tech-item"><i class="devicon-mongodb-plain colored"></i><span>MongoDB</span></div>
+                        <div class="tech-item"><i class="devicon-redis-plain colored"></i><span>Redis</span></div>
                     </div>
                 </div>
 
-                <!-- <div class="feature-card">
+                <!-- ORM -->
+                <div class="tech-category">
+                    <h2>ORM</h2>
+                    <div class="tech-grid">
+                        <div class="tech-item"><i class="devicon-sequelize-plain colored"></i><span>Sequelize</span>
+                        </div>
+                        <div class="tech-item"><i class="devicon-hibernate-plain colored"></i><span>Hibernate</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="logos/typeorm-icon-colored.png" alt="" class="tech-icon">
+                            <span>TypeORM</span>
+                        </div>
+                        <div class="tech-item"><i class="devicon-knexjs-original colored"></i><span>Knex /
+                                Objection.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DevOps -->
+                <div class="tech-category">
+                    <h2>DevOps</h2>
+                    <div class="tech-grid">
+                        <div class="tech-item"><i class="devicon-amazonwebservices-plain colored"></i><span>AWS</span>
+                        </div>
+                        <div class="tech-item"><i class="devicon-amazonwebservices-plain colored"></i><span>EC2 | S3 |
+                                MQTT
+                                | SQS</span></div>
+                        <div class="tech-item"><i class="devicon-rabbitmq-original colored"></i><span>RabbitMQ</span>
+                        </div>
+                        <div class="tech-item"><i class="devicon-nodejs-plain colored"></i><span>BullQ</span></div>
+                        <div class="tech-item"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+                        <div class="tech-item"><i class="devicon-jira-plain colored"></i><span>Jira</span></div>
+                    </div>
+                </div>
+
+                <!-- Others -->
+                <div class="tech-category">
+                    <h2>Others</h2>
+                    <div class="tech-grid">
+                        <div class="tech-item"><i class="devicon-html5-plain colored"></i><span>HTML</span></div>
+                        <div class="tech-item"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+                        <div class="tech-item"><i class="devicon-css3-plain colored"></i><span>CSS</span></div>
+                        <div class="tech-item"><i class="devicon-sass-original colored"></i><span>SASS</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features fade-up" id="testimonials">
+            <div class="features-container">
+                <div class="section-header">
+                    <h2 class="section-title">Testimonials</h2>
+                    <p class="section-subtitle">Words from people I’ve had the pleasure to work with — their experiences
+                        tell the story best. Honest feedback that reflects my passion for quality and teamwork.</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+
+                        <h3>Zeeshan Sultan - Solution Architect</h3>
+                        <p>Sabeel is a very dedicated and hardworking resource. If i had one word to describe him, It
+                            would
+                            be reliable. Never afraid of going the extra mile.</p>
+                        <div class="feature-icon float-right">
+                            <a href="https://www.linkedin.com/in/zeeshi7897/" target="_blank">
+                                <img src="https://media.licdn.com/dms/image/v2/D4D03AQGnlYBWi3nZWg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1699760019164?e=1763596800&v=beta&t=2wq3VBxADnEc6wHEY0oRQwMLPw-MBd_BHn6jCAYL6wM"
+                                    alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+
+                        <h3>Faheem Imtiaz - Product Designer</h3>
+                        <p>I wholeheartedly recommend Sabeel as a highly dedicated and hardworking individual. During
+                            our
+                            time together at Reactive Space, I consistently witnessed his exceptional work ethic and
+                            commitment to delivering top-notch results. He is a valuable team player who always goes
+                            above
+                            and beyond to ensure success. Any organization would benefit greatly from having Sabeel on
+                            their
+                            team.</p>
+                        <div class="feature-icon float-right">
+                            <a href="https://www.linkedin.com/in/faheemimtiaz/" target="_blank">
+                                <img src="https://media.licdn.com/dms/image/v2/C4E03AQFwlBZuiXO13g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1632298938315?e=1763596800&v=beta&t=7zZdrV_5SbNOIbX1BfqObAcw1an4l7npb_HEhZc4ML4"
+                                    alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+
+                        <h3>Zeeshan Ahmed - Lead IOS Developer</h3>
+                        <p>Throughout our collaboration, Sabeel consistently demonstrated a high level of technical
+                            expertise, dedication, and problem-solving abilities. His proficiency in both front-end and
+                            back-end development allowed us to seamlessly integrate complex systems and deliver a
+                            high-quality product on time. </p>
+                        <div class="feature-icon float-right">
+                            <a href="https://www.linkedin.com/in/zeeshan-ahmed-se/" target="_blank">
+                                <img src="https://media.licdn.com/dms/image/v2/D4D03AQE_9EbwVPi32g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1695582027686?e=1763596800&v=beta&t=xtkj3uFk9bkNw2Hg_OlINUZZaVhdxXS9RTTuXlkMjwc"
+                                    alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- <div class="feature-card">
                     <div class="feature-icon">🛡️</div>
                     <h3>Quantum Encryption</h3>
                     <p>Military-grade security protocols with quantum encryption that makes your data literally
                         impossible to breach.</p>
                 </div> -->
 
-                <!-- <div class="feature-card">
+                    <!-- <div class="feature-card">
                     <div class="feature-icon">🚀</div>
                     <h3>Hyperdrive Sync</h3>
                     <p>Instantaneous synchronization across all devices and platforms with zero latency, no matter the
                         distance.</p>
                 </div> -->
 
-                <!-- <div class="feature-card">
+                    <!-- <div class="feature-card">
                     <div class="feature-icon">🎯</div>
                     <h3>Mind Reading Analytics</h3>
                     <p>Predictive analytics so advanced, it anticipates your team's needs before they even know what
                         they need.</p>
                 </div> -->
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section class="contact fade-up" id="contact">
-        <div class="contact-container">
-            <div class="section-header">
-                <h2 class="section-title">Initialize Contact</h2>
-                <p class="section-subtitle">Ready to build something great? Let's connect.</p>
+        <!-- Contact Section -->
+        <section class="contact fade-up" id="contact">
+            <div class="contact-container">
+                <div class="section-header">
+                    <h2 class="section-title">Initialize Contact</h2>
+                    <p class="section-subtitle">Ready to build something great? Let's connect.</p>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Enter your subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="your.id@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Compose your message ..."
+                                required></textarea>
+                        </div>
+                        <div class="recaptcha-wrapper">
+                            <div class="g-recaptcha" data-sitekey="6LcnFgYsAAAAAF0tIud-as_QzAg4JcKkamja2A6f"
+                                data-theme="dark"></div>
+                        </div>
+                        <button type="submit" class="btn-primary btn-submit">Transmit Message</button>
+                    </form>
+                </div>
             </div>
+        </section>
 
-            <div class="contact-form-wrapper">
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Subject</label>
-                        <input type="text" id="subject" name="subject" placeholder="Enter your subject" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" placeholder="your.id@example.com" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5"
-                            placeholder="Compose your message ..." required></textarea>
-                    </div>
-                    <div class="recaptcha-wrapper">
-                        <div class="g-recaptcha" data-sitekey="6LcnFgYsAAAAAF0tIud-as_QzAg4JcKkamja2A6f" data-theme="dark"></div>
-                    </div>
-                    <button type="submit" class="btn-primary btn-submit">Transmit Message</button>
-                </form>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#experience">Experience</a>
+                    <span class="footer-separator">•</span>
+                    <a href="#projects">Projects</a>
+                    <span class="footer-separator">•</span>
+                    <a href="#tech-stack">Tech Stack</a>
+                    <span class="footer-separator">•</span>
+                    <a href="#testimonials">Testimonials</a>
+                    <span class="footer-separator">•</span>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Sabeel Ijaz. All rights reserved.</p>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-links">
-                <a href="#">Privacy Policy</a>
-                <span class="footer-separator">•</span>
-                <a href="#">Terms of Service</a>
-                <span class="footer-separator">•</span>
-                <a href="#">Documentation</a>
-                <span class="footer-separator">•</span>
-                <a href="#">Contact Support</a>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Sabeel Ijaz. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+        </footer>
 
     </div> <!-- .main-content -->
 
