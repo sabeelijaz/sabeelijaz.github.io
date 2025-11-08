@@ -35,7 +35,12 @@ body {
     background: var(--darker-bg);
     color: var(--text-primary);
     line-height: 1.6;
-    overflow-x: hidden;
+}
+
+.main-content {
+    position: relative;
+    z-index: 1;
+    overflow-x: clip; /* Use clip for better performance */
 }
 
 /* Enhanced Cyberpunk Background */
@@ -47,7 +52,7 @@ body {
     height: 100%;
     background: var(--darker-bg);
     overflow: hidden;
-    z-index: -5;
+    z-index: -5; 
 }
 
 .company-logo {
@@ -1591,6 +1596,11 @@ nav {
         display: block !important;
     }
 
+    nav {
+        display: block !important; 
+        padding: 1rem;
+    }
+
     .nav-links {
         display: none;
     }
@@ -1601,6 +1611,16 @@ nav {
 
     .hero-title {
         font-size: 2.5rem;
+    }
+
+    .section-title,
+    .section-title-project {
+        font-size: 2.2rem;
+    }
+
+    .feature-card h3,
+    .feature-card-project h3 {
+        font-size: 1.3rem;
     }
 
     .hero-buttons {
@@ -1628,6 +1648,10 @@ nav {
 
     .stats-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stats {
+        padding: 60px 1rem;
     }
 
     .contact {
