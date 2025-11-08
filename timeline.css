@@ -18,21 +18,6 @@
   --primary-pink: #ff00ff;
 }
 
-/* h2 {
-  margin: 5%;
-  text-align: center;
-  font-size: 4rem;
-  font-weight: 100;
-} */
-
-/* h1 {
-  margin: 4%;
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 10;
-  top: 0;
-} */
-
 .timeline {
   display: flex;
   flex-direction: column;
@@ -53,14 +38,6 @@
 .timeline__event:nth-child(2n+1) {
   flex-direction: row-reverse;
 }
-
-/* .timeline__event:nth-child(2n+1) .timeline__event__date {
-  border-radius: 0 6px 6px 0;
-} */
-
-/* .timeline__event:nth-child(2n+1) .timeline__event__content {
-  border-radius: 6px 0 0 6px;
-} */
 
 .timeline__event:nth-child(2n+1) .timeline__event__icon:before {
   content: "";
@@ -105,11 +82,7 @@
   background: var(--card-bg);
   width: calc(40vw - 84px);
   border: 1px solid var(--border-color);
-  /* border-radius: 0 6px 6px 0; */
-  /* position: relative;
-  transition: all 0.4s ease; */
   backdrop-filter: blur(10px);
-  /* clip-path: polygon(20px 0%, 100% 0%, 100% calc(100% - 20px), 100% 100%, 0% 100%, 0% 20px); */
 }
 
 .timeline__event__date {
@@ -125,7 +98,6 @@
   border: 1px solid var(--border-color);
   width: 13rem;
   text-align: center;
-  /* border-radius: 6px 0 0 6px; */
 }
 
 .timeline__event__icon {
@@ -284,31 +256,32 @@
   content: none;
 }
 
-@media (max-width: 786px) {
+@media (max-width: 992px) {
   .timeline__event {
-    flex-direction: column;
-    align-self: center;
+    width: 80vw;
   }
-
   .timeline__event__content {
-    width: 100%;
+    width: calc(100% - 164px);
   }
+}
 
+@media (max-width: 768px) {
   .timeline__event__icon {
-    border-radius: 6px 6px 0 0;
-    width: 100%;
-    margin: 0;
-    box-shadow: none;
-  }
-
-  .timeline__event__icon:before,
-  .timeline__event__icon:after {
     display: none;
   }
 
+  .timeline__event,
+  .timeline__event:nth-child(2n+1) {
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .timeline__event__date {
-    border-radius: 0;
-    padding: 20px;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
 
   .timeline__event:nth-child(2n+1) {
@@ -316,14 +289,8 @@
     align-self: center;
   }
 
-  .timeline__event:nth-child(2n+1) .timeline__event__date {
-    border-radius: 0;
-    padding: 20px;
-  }
-
-  .timeline__event:nth-child(2n+1) .timeline__event__icon {
-    border-radius: 6px 6px 0 0;
-    margin: 0;
+  .timeline__event__content {
+    width: 100%;
   }
 }
 

@@ -1813,3 +1813,17 @@ nav {
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(var(--primary-pink), var(--primary-cyan));
 }
+
+/* recaptcha */
+
+.recaptcha-wrapper {
+    background: rgba(0, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    backdrop-filter: blur(10px);
+    clip-path: polygon(10px 0%, 100% 0%, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0% 100%, 0% 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
