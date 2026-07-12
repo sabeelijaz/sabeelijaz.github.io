@@ -131,6 +131,33 @@ function initHeroPhoto() {
     testImg.src = preferred;
 }
 
+// ── Hero Experience Years ────────────────────────────────
+function initHeroExperience() {
+    const yearsEl = document.getElementById('hero-experience-years');
+    const metaEl = document.getElementById('hero-experience-meta');
+    const statsEl = document.getElementById('stats-experience-value');
+    if (!yearsEl && !metaEl && !statsEl) return;
+
+    const startYear = 2018;
+    const currentYear = new Date().getFullYear();
+    const years = currentYear - startYear;
+    const value = `${years}+`;
+
+    if (yearsEl) yearsEl.textContent = value;
+    if (metaEl) metaEl.textContent = value;
+    if (statsEl) {
+        statsEl.setAttribute('data-target', String(years));
+        statsEl.innerHTML = `0<span>+</span>`;
+    }
+}
+
+// ── Footer Year ─────────────────────────────────────────
+function initFooterYear() {
+    const yearEl = document.getElementById('current-year');
+    if (!yearEl) return;
+    yearEl.textContent = new Date().getFullYear();
+}
+
 // ── Contact Form ─────────────────────────────────────────
 function initContactForm() {
     const form = document.getElementById('contactForm');
@@ -179,6 +206,8 @@ function boot() {
     initFadeUp();
     initStatsCounter();
     initHeroPhoto();
+    initHeroExperience();
+    initFooterYear();
     initContactForm();
 }
 
