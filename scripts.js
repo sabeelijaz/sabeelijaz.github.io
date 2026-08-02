@@ -354,15 +354,35 @@ function initContactForm() {
         const serviceID  = 'service_portfolio';
         const templateID = 'template_portfolio';
 
+        // Read reCAPTCHA token — required by EmailJS
+        const recaptchaToken = grecaptcha.getResponse();
+        if (!recaptchaToken) {
+            const recaptchaWrapper = form.querySelector('.recaptcha-wrapper');
+            let recaptchaErr = form.querySelector('.recaptcha-error');
+            if (!recaptchaErr) {
+                recaptchaErr = document.createElement('p');
+                recaptchaErr.className = 'recaptcha-error gate-error';
+                recaptchaErr.setAttribute('role', 'alert');
+                recaptchaWrapper.after(recaptchaErr);
+            }
+            recaptchaErr.textContent = 'Please complete the reCAPTCHA check.';
+            return;
+        }
+
+        // Clear any previous reCAPTCHA error
+        const existingRecaptchaErr = form.querySelector('.recaptcha-error');
+        if (existingRecaptchaErr) existingRecaptchaErr.textContent = '';
+
         btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg> Sending...';
         btn.disabled = true;
 
         // Build sanitized payload manually (not sendForm, to use clean values)
         const payload = {
-            name:    Security.sanitize(nameInput.value),
-            email:   Security.sanitize(emailInput.value),
-            subject: Security.sanitize(subjectInput.value),
-            message: Security.sanitize(msgInput.value),
+            name:                  Security.sanitize(nameInput.value),
+            email:                 Security.sanitize(emailInput.value),
+            subject:               Security.sanitize(subjectInput.value),
+            message:               Security.sanitize(msgInput.value),
+            'g-recaptcha-response': recaptchaToken,
         };
 
         emailjs.send(serviceID, templateID, payload)
@@ -370,8 +390,9 @@ function initContactForm() {
                 btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Message Sent!';
                 btn.style.background = '#10b981';
                 form.reset();
+                grecaptcha.reset();
                 // Clear any lingering error messages
-                form.querySelectorAll('.field-error').forEach(el => el.textContent = '');
+                form.querySelectorAll('.field-error, .recaptcha-error').forEach(el => el.textContent = '');
                 setTimeout(() => {
                     btn.innerHTML = original;
                     btn.style.background = '';
@@ -380,6 +401,7 @@ function initContactForm() {
             }, err => {
                 btn.innerHTML = '✕ Failed — Try Again';
                 btn.style.background = '#ef4444';
+                grecaptcha.reset();
                 console.error('EmailJS error:', err);
                 setTimeout(() => {
                     btn.innerHTML = original;
