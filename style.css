@@ -1247,3 +1247,266 @@ body.gate-open {
         font-size: 0.87rem;
     }
 }
+
+
+/* ── Gate Modal: Services List ──────────────────────────── */
+.gate-services-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gate-services-list li {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    padding: 0.35rem 0.75rem;
+    background: rgba(59, 130, 246, 0.06);
+    border: 1px solid rgba(59, 130, 246, 0.12);
+    border-radius: var(--radius);
+}
+
+.gate-cta-note {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+/* ── Services Section ───────────────────────────────────── */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.service-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 1.75rem;
+    transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.service-card:hover {
+    border-color: var(--border-accent);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-card);
+}
+
+.service-icon {
+    width: 52px;
+    height: 52px;
+    background: var(--accent-subtle);
+    border: 1px solid var(--accent-border);
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent);
+    flex-shrink: 0;
+}
+
+.service-card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    letter-spacing: -0.2px;
+    line-height: 1.35;
+}
+
+.service-card p {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    flex: 1;
+}
+
+.service-tags {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.25rem;
+}
+
+.service-tags li {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--accent);
+    background: var(--accent-subtle);
+    border: 1px solid var(--accent-border);
+    border-radius: 100px;
+    padding: 0.2rem 0.65rem;
+    letter-spacing: 0.2px;
+}
+
+/* ── Upwork Card ────────────────────────────────────────── */
+.upwork-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background: linear-gradient(135deg, rgba(20, 168, 0, 0.06) 0%, rgba(15, 23, 42, 0.8) 100%);
+    border: 1px solid rgba(20, 168, 0, 0.25);
+    border-radius: var(--radius-lg);
+    padding: 2rem 2.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.upwork-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #14a800, transparent);
+}
+
+.upwork-card-left {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    flex-shrink: 0;
+}
+
+.upwork-logo-wrap {
+    width: 60px;
+    height: 60px;
+    background: rgba(20, 168, 0, 0.1);
+    border: 1px solid rgba(20, 168, 0, 0.25);
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.upwork-card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.upwork-name-row {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.upwork-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.upwork-badge {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #14a800;
+    background: rgba(20, 168, 0, 0.12);
+    border: 1px solid rgba(20, 168, 0, 0.3);
+    border-radius: 100px;
+    padding: 0.2rem 0.6rem;
+}
+
+.upwork-title {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.upwork-stats {
+    display: flex;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    margin-top: 0.25rem;
+}
+
+.upwork-stat {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.upwork-stat svg { color: #14a800; }
+
+.upwork-card-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-end;
+    flex-shrink: 0;
+}
+
+.upwork-desc {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    text-align: right;
+    max-width: 260px;
+    line-height: 1.6;
+}
+
+.upwork-actions {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+/* Upwork green CTA button */
+.btn-upwork {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1.5rem;
+    background: #14a800;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: var(--radius);
+    transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+    white-space: nowrap;
+}
+
+.btn-upwork:hover {
+    background: #0d8f00;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(20, 168, 0, 0.3);
+}
+
+/* Upwork contact link color override */
+.contact-link-upwork svg { color: #14a800; }
+.contact-link-upwork:hover { border-color: #14a800; background: rgba(20, 168, 0, 0.06); }
+
+/* ── Services Responsive ────────────────────────────────── */
+@media (max-width: 1024px) {
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
+    .upwork-card {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.75rem;
+    }
+    .upwork-card-right { align-items: flex-start; }
+    .upwork-desc { text-align: left; }
+    .upwork-actions { justify-content: flex-start; }
+}
+
+@media (max-width: 768px) {
+    .services-grid { grid-template-columns: 1fr; }
+    .upwork-stats { gap: 0.75rem; }
+}
