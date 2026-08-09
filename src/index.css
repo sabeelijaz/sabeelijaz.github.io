@@ -1,0 +1,8 @@
+/* Import existing portfolio styles first — before Tailwind directives */
+@import './styles/style.css';
+@import './styles/timeline.css';
+@import './styles/techstack.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

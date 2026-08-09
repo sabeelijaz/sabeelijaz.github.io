@@ -1,0 +1,222 @@
+/* Timeline — Icon on line, date on right */
+* { box-sizing: border-box; }
+
+/* ── Container ─────────────────────────────────────────── */
+.timeline {
+    position: relative;
+    max-width: 860px;
+    margin: 0 auto;
+    padding-left: 32px; /* space for the left line */
+}
+
+/* Vertical line */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 32px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        var(--border) 4%,
+        var(--border) 96%,
+        transparent 100%
+    );
+    transform: translateX(-50%);
+}
+
+/* ── Event row ─────────────────────────────────────────── */
+.timeline__event {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2.5rem;
+    padding-left: 52px; /* icon width (64px) / 2 + some gap */
+}
+
+/* ── Icon — sits on the line ───────────────────────────── */
+.timeline__event__icon {
+    position: absolute;
+    left: 0;                  /* aligns centre of icon on the line */
+    top: 4px;
+    transform: translateX(-50%) translateX(1px); /* centre on the 2px line */
+    width: 52px;
+    height: 52px;
+    background: var(--bg-surface);
+    border: 2px solid var(--border);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    flex-shrink: 0;
+    transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.timeline__event:hover .timeline__event__icon {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 4px var(--accent-subtle);
+}
+
+.company-logo {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    filter: brightness(0.85) saturate(0.7);
+    transition: filter 0.2s;
+}
+
+.timeline__event:hover .company-logo {
+    filter: brightness(1) saturate(1);
+}
+
+/* ── Content + Date wrapper ────────────────────────────── */
+.timeline__event__body {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    flex: 1;
+    min-width: 0;
+    position: relative;
+}
+
+/* ── Content card ──────────────────────────────────────── */
+.timeline__event__content {
+    flex: 1;
+    min-width: 0;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 1.4rem 1.6rem;
+    transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.timeline__event:hover .timeline__event__content {
+    border-color: var(--border-accent);
+    box-shadow: var(--shadow-card);
+}
+
+/* ── Date — right side ─────────────────────────────────── */
+.timeline__event__date {
+    flex-shrink: 0;
+    width: 96px;
+    padding-top: 1.1rem;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    line-height: 1.5;
+    text-align: right;
+    letter-spacing: 0.2px;
+}
+
+/* ── Title & description ───────────────────────────────── */
+.timeline__event__title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.9rem;
+    line-height: 1.45;
+}
+
+.timeline__event__description ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline__event__description ul li {
+    position: relative;
+    padding-left: 1.2rem;
+    margin: 0.55rem 0;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    line-height: 1.65;
+}
+
+.timeline__event__description ul li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--accent);
+    font-size: 0.72rem;
+    line-height: 1.85;
+}
+
+/* Nested */
+.timeline__event__description ul ul {
+    margin-top: 0.4rem;
+    margin-left: 0.5rem;
+}
+
+.timeline__event__description ul ul li::before {
+    content: '–';
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    line-height: 1.65;
+}
+
+.timeline__event__description strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+/* ── Small connector line from icon to card ────────────── */
+.timeline__event__body::before {
+    content: '';
+    position: absolute;
+    left: -14px;        /* bridge between icon edge and card */
+    top: 30px;
+    width: 14px;
+    height: 2px;
+    background: var(--border);
+}
+
+/* ── Mobile ─────────────────────────────────────────────── */
+@media (max-width: 640px) {
+    .timeline {
+        padding-left: 20px;
+    }
+
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline__event {
+        padding-left: 38px;
+    }
+
+    .timeline__event__icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .company-logo {
+        width: 22px;
+        height: 22px;
+    }
+
+    .timeline__event__body {
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+
+    .timeline__event__body::before {
+        display: none;
+    }
+
+    .timeline__event__date {
+        width: auto;
+        text-align: left;
+        padding-top: 0;
+        font-size: 0.75rem;
+        color: var(--accent);
+        order: -1; /* date above content on mobile */
+    }
+
+    .timeline__event__content {
+        padding: 1.1rem 1.2rem;
+    }
+}
