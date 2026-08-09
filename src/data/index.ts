@@ -1,7 +1,32 @@
+// Experience Images
+import elixirLogoImage from '../assets/logos/elixir.svg'
+import bkkLogoImage from '../assets/logos/bkk.svg'
+import jldLogoImage from '../assets/logos/jld.png'
+import reactiveSpaceLogoImage from '../assets/logos/reactive-space.png'
+import khasTechLogoImage from '../assets/logos/khas-tech.png'
+import ezdealzLogoImage from '../assets/logos/ezdealz.png'
+
+// Project Images
+import ccmImage from '../assets/projects/ccm.png'
+import bkkAppImage from '../assets/projects/bkk-app.png'
+import bkkSocialImage from '../assets/projects/bkk-social.png'
+import bkkWeatherImage from '../assets/projects/bkk-weather.png'
+import ezdealzImage from '../assets/projects/ezdealz.png'
+import coinhunterImage from '../assets/projects/coinhunter.png'
+import coupontalktalkImage from '../assets/projects/coupontalktalk.png'
+import abbcWalletImage from '../assets/projects/abbc-wallet.png'
+
+// Testimonial Images
+import zeeshanSultanImage from '../assets/testimonials/zeeshan_sultan.jpeg'
+import faheemImtiazImage from '../assets/testimonials/faheem_imtiaz.jpeg'
+import zeeshanAhmedImage from '../assets/testimonials/zeeshan_ahmed.jpeg'
+
+
+
 export const EXPERIENCE = [
   {
     type: 'type1',
-    logo: '/logos/elixir.svg',
+    logo: elixirLogoImage,
     company: 'Elixir Technologies',
     title: 'Senior Software Engineer · Elixir Technologies',
     date: 'Jun 2022 – Present',
@@ -15,7 +40,7 @@ export const EXPERIENCE = [
   },
   {
     type: 'type2',
-    logo: '/logos/bkk.svg',
+    logo: bkkLogoImage,
     company: 'Bakhabar Kissan',
     title: 'Senior Software Engineer · Bakhabar Kissan',
     date: 'Jul 2020 – Jun 2022',
@@ -29,7 +54,7 @@ export const EXPERIENCE = [
   },
   {
     type: 'type3',
-    logo: '/logos/ezdealz.png',
+    logo: ezdealzLogoImage,
     company: 'EzDealz',
     title: 'Full-Stack Developer · EzDealz Private Limited',
     date: 'Jan 2020 – Jun 2020',
@@ -41,7 +66,7 @@ export const EXPERIENCE = [
   },
   {
     type: 'type1',
-    logo: '/logos/jld.png',
+    logo: jldLogoImage,
     company: 'JLD International',
     title: 'MEAN Stack Developer · JLD International IT Solutions LLC',
     date: 'Dec 2018 – Dec 2019',
@@ -53,7 +78,7 @@ export const EXPERIENCE = [
   },
   {
     type: 'type1',
-    logo: '/logos/RS.png',
+    logo: reactiveSpaceLogoImage,
     company: 'Reactive Space',
     title: 'MEAN Stack Developer · Reactive Space',
     date: 'Jan 2018 – Dec 2018',
@@ -65,7 +90,7 @@ export const EXPERIENCE = [
   },
   {
     type: 'type2',
-    logo: '/logos/KT.png',
+    logo: khasTechLogoImage,
     company: 'Khas Tech',
     title: 'Web Developer (Internship) · Khas Tech',
     date: 'Oct 2017 – Jan 2018',
@@ -79,49 +104,49 @@ export const EXPERIENCE = [
 
 export const PROJECTS = [
   {
-    img: '/projects/ccm.png',
+    img: ccmImage,
     alt: 'Customer Communications Management System screenshot',
     title: 'Customer Communications Management (CCM) System',
     desc: 'Enterprise-grade platform by Elixir Technologies that streamlines and automates customer communications across multiple channels — bills, statements, and notifications — with compliance, scalability, and seamless workflow integration.',
   },
   {
-    img: '/projects/bkk-app.png',
+    img: bkkAppImage,
     alt: 'Bakhabar Kissan Advisory System screenshot',
     title: 'Bakhabar Kissan — Advisory System',
     desc: 'Personalized, crop-specific recommendations for farmers based on real-time data and expert analysis. Guides users from sowing to harvest with tips on irrigation, fertilization, and pest control.',
   },
   {
-    img: '/projects/bkk-social.png',
+    img: bkkSocialImage,
     alt: 'Bakhabar Kissan Social Platform screenshot',
     title: 'Bakhabar Kissan — Social Platform',
     desc: 'Comprehensive social and advisory mobile platform for farmers — real-time weather, crop tips, market rates, and expert guidance. Bridging technology and modern farming in Pakistan.',
   },
   {
-    img: '/projects/bkk-weather.png',
+    img: bkkWeatherImage,
     alt: 'Bakhabar Kissan Weather Module screenshot',
     title: 'Bakhabar Kissan — Weather Module',
     desc: 'Location-based weather forecasts tailored for farmers — temperature, rainfall, humidity, and wind — with timely advisories and alerts to protect crops and optimise yield.',
   },
   {
-    img: '/projects/ezdealz.png',
+    img: ezdealzImage,
     alt: 'EzDealz App screenshot',
     title: 'EzDealz App',
     desc: "Mobile gaming and discount platform where users win prizes, cash, and brand deals by solving riddles and quizzes. Featured a live TV game-show integration — one of Pakistan's first indigenous gaming innovations.",
   },
   {
-    img: '/projects/coinhunter.png',
+    img: coinhunterImage,
     alt: 'Coin Hunter screenshot',
     title: 'Coin Hunter',
     desc: 'Augmented-reality mobile platform where users explore their surroundings via camera to find, collect, and trade cryptocurrency coins. Location-based AR interactions connected to a wallet and social trading features.',
   },
   {
-    img: '/projects/coupontalktalk.png',
+    img: coupontalktalkImage,
     alt: 'Coupon Talk Talk screenshot',
     title: 'Coupon Talk Talk',
     desc: 'AR-based platform blending real-world camera views with digital deals, guides, and training materials. Helps brands enhance engagement, accessibility, and productivity through immersive technology.',
   },
   {
-    img: '/projects/abbc-wallet.png',
+    img: abbcWalletImage,
     alt: 'ABBC Multicoin Wallet screenshot',
     title: 'ABBC Multicoin Wallet',
     desc: 'Secure digital wallet supporting multiple cryptocurrencies with high-end encryption, fast transfers, and portfolio tracking. Designed for both beginners and experienced traders.',
@@ -133,21 +158,21 @@ export const TESTIMONIALS = [
     text: 'Sabeel is a very dedicated and hardworking resource. If I had one word to describe him, it would be <strong>reliable</strong>. Never afraid of going the extra mile.',
     name: 'Zeeshan Sultan',
     role: 'Solution Architect',
-    img: '/images/zeeshan_sultan.jpeg',
+    img: zeeshanSultanImage,
     linkedin: 'https://www.linkedin.com/in/zeeshi7897/',
   },
   {
     text: 'I wholeheartedly recommend Sabeel as a highly dedicated and hardworking individual. During our time at Reactive Space, I consistently witnessed his exceptional work ethic and commitment to delivering top-notch results. He is a valuable team player who always goes above and beyond to ensure success.',
     name: 'Faheem Imtiaz',
     role: 'Product Designer',
-    img: '/images/faheem_imtiaz.jpeg',
+    img: faheemImtiazImage,
     linkedin: 'https://www.linkedin.com/in/faheemimtiaz/',
   },
   {
     text: 'Throughout our collaboration, Sabeel consistently demonstrated a high level of technical expertise, dedication, and problem-solving ability. His proficiency in both front-end and back-end development allowed us to seamlessly integrate complex systems and deliver a high-quality product on time.',
     name: 'Zeeshan Ahmed',
     role: 'Lead iOS Developer',
-    img: '/images/zeeshan_ahmed.jpeg',
+    img: zeeshanAhmedImage,
     linkedin: 'https://www.linkedin.com/in/zeeshan-ahmed-se/',
   },
 ]

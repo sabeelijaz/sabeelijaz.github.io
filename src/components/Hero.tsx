@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import HeroImage from '../assets/images/og-image.svg'
 
 export default function Hero() {
   const [years, setYears] = useState('8+')
@@ -72,10 +73,9 @@ export default function Hero() {
         </div>
         <div className="hero-photo-wrap">
           <img
-            src="/images/og-image.svg"
+            src={HeroImage}
             alt="Sabeel Ijaz — Full-Stack Software Engineer"
             className="hero-photo"
-            onError={(e) => { (e.currentTarget as HTMLImageElement).src = '/images/og-image.svg' }}
           />
         </div>
       </div>
