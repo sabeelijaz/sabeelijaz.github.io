@@ -1,5 +1,4 @@
 import { Helmet } from 'react-helmet-async'
-import VisitorGate from './components/VisitorGate'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Stats from './components/Stats'
