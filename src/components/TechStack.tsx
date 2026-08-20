@@ -16,7 +16,7 @@ const CATEGORIES = [
       { cls: 'devicon-angular-plain colored', name: 'Angular' },
       { cls: 'devicon-react-original colored', name: 'React' },
       { cls: 'devicon-spring-plain colored', name: 'Spring Boot' },
-      { img: '/logos/loopback-colored.png', name: 'LoopBack' },
+      { img: '/images/loopback-colored.png', name: 'LoopBack' },
       { cls: 'devicon-nestjs-plain colored', name: 'NestJS' },
       { cls: 'devicon-nextjs-plain colored', name: 'Next.js' },
       { cls: 'devicon-redux-original colored', name: 'Redux / RxJS' },
@@ -36,7 +36,7 @@ const CATEGORIES = [
     items: [
       { cls: 'devicon-sequelize-plain colored', name: 'Sequelize' },
       { cls: 'devicon-hibernate-plain colored', name: 'Hibernate' },
-      { img: '/logos/typeorm-icon-colored.png', name: 'TypeORM' },
+      { img: '/images/typeorm-icon-colored.png', name: 'TypeORM' },
       { cls: 'devicon-knexjs-original colored', name: 'Knex / Objection' },
     ],
   },
